@@ -1,0 +1,47 @@
+.menu{
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 2px ;
+    width: 400px;
+    height: 400px;
+
+}
+
+section{
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 500px;
+height: 600px;
+
+}
+
+
+main{
+color:rgb(99, 99, 99);
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+form{
+
+padding: 30px;
+
+}
+
+input{
+margin-bottom: 30px;
+padding: 3px;
+width: 280px;
+}
+
+button{
+
+margin-top: 30px;
+background-color: azure;
+color: rgb(99, 99, 99);
+
+}
