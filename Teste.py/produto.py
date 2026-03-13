@@ -1,9 +1,9 @@
 class Produto:
-    def __init__(self,id_produto,nome,preco,quantidade_estoque):
+    def __init__(self,id_produto,nome,preco):
         self.id_produto = id_produto
         self.nome = nome
         self.preco = preco
-        self.quantidade = quantidade_estoque
+        self.quantidade ={}
         
     
     def exibir_produtos(self):
@@ -25,8 +25,15 @@ class Produto:
 |{nome_produto}
 |{quantidade_produto}
 """)
-        
-        
-        
-p1 = Produto(12,"banana",1.5,6)
+            
+    def remover_Estoques(self):
+        nome = input("Nome do Produto: ")
+        if nome in self.quantidade:
+            self.quantidade.pop(nome)
+            print("Removido.")
+        else:
+            print("Chave não encontrada.")
+                
+p1 = Produto(123, "banana", 1.90)
 p1.adicionar_Estoque()
+p1.remover_Estoques()
