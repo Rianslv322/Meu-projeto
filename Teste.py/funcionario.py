@@ -1,4 +1,4 @@
-class FUncionario:
+class Funcionario:
     def __init__(self,id_fun,nome,cargo,salario):
         self._id_funcionario = id_fun
         self.nome = nome

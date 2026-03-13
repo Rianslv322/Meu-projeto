@@ -18,3 +18,7 @@ class Venda:
 [3]| Valor Total: {self.valor_total}         
 """)
         print(f"[4] Produto: {self.produto.exibir_produtos()}")
+        
+        
+# v1 = Venda(123,2,0,1,"abc",8)
+# print(v1.calcular_total())
