@@ -34,6 +34,6 @@ class Produto:
         else:
             print("Chave não encontrada.")
                 
-# p1 = Produto(123, "banana", 1.90)
-# p1.adicionar_Estoque()
-# p1.remover_Estoques()
+p1 = Produto(123, "banana", 1.90)
+p1.adicionar_Estoque()
+p1.remover_Estoques()

@@ -4,7 +4,7 @@ from venda import Venda
 class Empresa:
     def __init__(self,listar_func,lsitar_produtos,listar_vendas):
         self.listar_func = listar_func
-        self.lsitar_produtos = lsitar_produtos
+        self.listar_prods = lsitar_produtos
         self.listar_vendas =listar_vendas
         
     def cadastrar_funcionarios(self,id_fun,nome,cargo,salario):
@@ -13,10 +13,20 @@ class Empresa:
         return f"Funcnionário cadastrado."
         
     def listar_funcionario(self):
-        for x in self.listar_func:
-            print(f"{}")
+        for func in self.listar_func:
+            (f"{func.exibir_dados()}")
+            break
         
+    
+    def cadastar_produto(self,id_produto,nome,preco):
+        produto = Produto(id_produto,nome,preco)
+        self.listar_prods.append(produto)
+        return f'Produto cadastrado'
+    
+    def lista_produtos(self):
+        for prod in self.listar_prods:
+            print(f"{prod.exibir_produtos()}")
         
-em1 = Empresa([],[],[])
-print(em1.cadastrar_funcionarios("123","Rian silva","gerente",3000))
-print(em1.listar_funcionario())
+empresa1 = Empresa([],[],[])
+empresa1.cadastar_produto(123,"Dell vale",6.99)
+empresa1.lista_produtos()

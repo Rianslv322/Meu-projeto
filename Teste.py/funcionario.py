@@ -1,13 +1,13 @@
 class Funcionario:
     def __init__(self,id_fun,nome,cargo,salario):
-        self._id_funcionario = id_fun
+        self.id_funcionario = id_fun
         self.nome = nome
         self.cargo = cargo
         self.salario = salario
         
     def exibir_dados(self):
         print(f"""
-| ID: {self.id_funcioanrio}
+| ID: {self.id_funcionario}
 | Nome: {self.nome}
 | Cargo: {self.cargo}
 | salário: {self.salario}""")
@@ -16,5 +16,4 @@ class Funcionario:
     def aumentar_Salario(self,valor):
         self.salario = valor
         return f"Recebimento de Aumento de R${valor} Reais."
-    
     
