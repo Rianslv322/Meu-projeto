@@ -7,11 +7,11 @@ class Funcionario:
         
     def exibir_dados(self):
         print(f"""
-| ID: {self.id_funcionario}
-| Nome: {self.nome}
-| Cargo: {self.cargo}
-| salário: {self.salario}""")
-        
+DADOS DO FUNCIONÀRIO
+[1]| ID: {self.id_funcionario}
+[2]| Nome: {self.nome}
+[3]| Cargo: {self.cargo}
+[4]| salário: {self.salario}""")
         
     def aumentar_Salario(self,valor):
         self.salario = valor
