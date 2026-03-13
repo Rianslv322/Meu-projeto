@@ -18,15 +18,24 @@ class Empresa:
             break
         
     
-    def cadastar_produto(self,id_produto,nome,preco):
-        produto = Produto(id_produto,nome,preco)
+    def cadastar_produto(self,id_produto,nome,preco,quantidade):
+        produto = Produto(id_produto,nome,preco,quantidade)
         self.listar_prods.append(produto)
         return f'Produto cadastrado'
     
     def lista_produtos(self):
         for prod in self.listar_prods:
-            print(f"{prod.exibir_produtos()}")
+            (f"{prod.exibir_produtos()}")
+            
+    def registrar_vendas(self,id_venda,quantidade_venda,valor_total):
+        venda = Venda(id_venda,quantidade_venda,valor_total)
+
+        
+        self.listar_vendas.append(venda)
+        return "Registro de venda concluido."
+        
         
 empresa1 = Empresa([],[],[])
-empresa1.cadastar_produto(123,"Dell vale",6.99)
-empresa1.lista_produtos()
+# empresa1.cadastar_produto(123,"Dell vale",6.99,1)
+# empresa1.lista_produtos()
+print(empresa1.registrar_vendas(1,4,0,2,"bbb",5,2))

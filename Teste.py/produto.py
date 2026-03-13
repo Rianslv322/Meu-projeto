@@ -1,17 +1,18 @@
 class Produto:
-    def __init__(self,id_produto,nome,preco):
+    def __init__(self,id_produto,nome,preco,quantidade):
         self.id_produto = id_produto
         self.nome = nome
         self.preco = preco
-        self.quantidade ={}
+        self.quantidade = quantidade
         
     
     def exibir_produtos(self):
         print(f"""
+    DADOS PRODUTO
 | ID: {self.id_produto}
 | Nome: {self.nome}
 | Preço: {self.preco}
-|Quantidade: {self.quantida}""")
+|Quantidade: {self.quantidade}""")
         
     def adicionar_Estoque(self):
         nome = input("Nome do Produto: ")
@@ -34,6 +35,7 @@ class Produto:
         else:
             print("Chave não encontrada.")
                 
-p1 = Produto(123, "banana", 1.90)
-p1.adicionar_Estoque()
-p1.remover_Estoques()
+# p1 = Produto(123, "banana", 1.90,0)
+# p1.adicionar_Estoque()
+# p1.remover_Estoques()
+# # p1.exibir_produtos()
